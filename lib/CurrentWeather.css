@@ -1,0 +1,24 @@
+.current-weather-div {
+  border-bottom: 2px solid black;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.current-parent-div {
+  display: flex;
+}
+
+.currently-div,
+.high-low {
+  border: 2px solid gray;
+  margin: 30px;
+  padding: 10px;
+  width: 40%;
+}
+
+.summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
