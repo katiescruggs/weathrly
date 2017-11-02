@@ -1,0 +1,24 @@
+.card {
+  align-items: center;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 110px;
+  margin: 10px;
+  padding: 20px;
+  width: 70px;
+}
+
+span {
+  margin: 10px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
