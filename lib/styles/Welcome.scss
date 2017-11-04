@@ -1,0 +1,12 @@
+.welcome-screen {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.welcome-screen .search {
+  display: block;
+  margin: 25px auto;
+}
