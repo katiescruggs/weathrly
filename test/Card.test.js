@@ -4,7 +4,7 @@ import Card from '../lib/Card';
 
 describe('Card', () => {
   it('should render', () => {
-    const card = shallow(<Card />);
+    let card = shallow(<Card time="2:00" icon="" temp={[23]}/>);
     console.log(card);
   });
 });
