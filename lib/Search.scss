@@ -1,5 +1,6 @@
 .search {
   display: inline-block;
+  position: relative;
 }
 
 .search input {
@@ -10,4 +11,22 @@
 .search button {
   font-size: 16px;
   height: 34px;
+}
+
+.suggestion-list {
+  position: absolute;
+}
+
+.suggestion-list li {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  list-style-type: none;
+  margin-left: -25px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.suggestion-list li:hover {
+  cursor: pointer;
+  background-color: magenta;
 }
