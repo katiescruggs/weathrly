@@ -58,6 +58,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "@katiescruggs/complete-me": "git+https://github.com/katiescruggs/complete-me.git"
+    "@katiescruggs/complete-me": "git+https://github.com/katiescruggs/complete-me.git",
+    "prop-types": "^15.6.0"
   }
 }
