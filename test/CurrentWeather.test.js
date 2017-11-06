@@ -35,7 +35,7 @@ describe('CurrentWeather', () => {
 
   it('should render the current-conditions p tag with the prop conditions', () => {
     const currentWeather = shallow(<CurrentWeather conditions="Cloudy Test"/>);
-    expect(currentWeather.find('.current-conditions').text()).toEqual('Cloudy Test');
+    expect(currentWeather.find('.current-conditions').text()).toEqual('Current Conditions: Cloudy Test');
   });
 
   it('should render the today-title h3 with props day, month, and date', () => {
@@ -50,6 +50,6 @@ describe('CurrentWeather', () => {
 
   it('should render the summary p tag with the summary prop', () => {
     const currentWeather = shallow(<CurrentWeather summary="I am a summary" />);
-    expect(currentWeather.find('.summary').text()).toEqual('I am a summary');
+    expect(currentWeather.find('.summary').text()).toEqual('Today\'s Outlook: I am a summary');
   });
 });
