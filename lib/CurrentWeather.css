@@ -2,30 +2,36 @@ h1, h2 {
   text-align: center;
 }
 
-.current-parent-div {
-  display: flex;
-  justify-content: center;
+.current-weather-div {
+  display: inline-block;
 }
 
-.currently-div,
-.today {
-  align-items: center;
+.current-parent-div {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 140px;
-  margin: 30px;
+  justify-content: center;
   padding: 10px;
-  width: 180px;
+  width: 250px;
 }
 
+.currently-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.current-temp,
 .high-low {
   font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .current-parent-div h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .summary {
