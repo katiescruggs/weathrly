@@ -17,7 +17,25 @@ const mockArray = [
 
 describe('TenDayForecast', () => {
   it('should exist', () => {
-    const tenDayForecast = shallow(<TenDayForecast array={[]}/>);
+    const tenDayForecast = shallow(<TenDayForecast array={[]} />);
     expect(tenDayForecast).toBeDefined();
+  });
+
+  it('should render one h2 tag', () => {
+    const tenDayForecast = shallow(<TenDayForecast array={[]} />);
+    expect(tenDayForecast.find('h2').length).toEqual(1);
+  });
+
+  it('should render 10 card tags when given an array of 10 objects', () => {
+    const tenDayForecast = shallow(<TenDayForecast array={mockArray} />)
+    expect(tenDayForecast.find('Card').length).toEqual(10);
+  });
+
+  it('should pass props from its array prop to its Card children', () => {
+    const tenDayForecast = shallow(<TenDayForecast array={mockArray} />)
+
+    expect(tenDayForecast.find('Card').first().props().time).toEqual(mockArray[0].day);
+    expect(tenDayForecast.find('Card').first().props().icon).toEqual(mockArray[0].icon);
+    expect(tenDayForecast.find('Card').first().props().temp).toEqual([mockArray[0].highF, mockArray[0].lowF]);
   });
 });
