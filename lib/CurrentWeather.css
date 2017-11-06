@@ -2,30 +2,33 @@ h1, h2 {
   text-align: center;
 }
 
-.current-parent-div {
+.current-weather-div {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  height: 200px;
+  width: 650px;
 }
 
 .currently-div,
-.today {
+.today-div {
   align-items: center;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 140px;
-  margin: 30px;
   padding: 10px;
-  width: 180px;
+  width: 300px;
 }
 
+.current-temp,
 .high-low {
   font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.current-parent-div h3 {
-  font-size: 20px;
+.currently-div h3,
+.today-div h3 {
+  font-size: 24px;
 }
 
 .summary {
@@ -39,6 +42,6 @@ h1, h2 {
 }
 
 .current-temp {
-  font-size: 30px;
+  font-size: 36px;
   margin-left: 10px;
 }

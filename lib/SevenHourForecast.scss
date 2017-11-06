@@ -1,12 +1,19 @@
+.seven-hour {
+
+}
+
 h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 75px;
+  text-align: left;
 }
 
 .seven-card-holder {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 10px auto;
-  width: 910px;
 }
