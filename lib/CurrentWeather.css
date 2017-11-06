@@ -3,24 +3,19 @@ h1, h2 {
 }
 
 .current-weather-div {
-  display: inline-block;
-}
-
-.current-parent-div {
-  background-color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  width: 250px;
+  margin: 0 auto;
+  width: 650px;
 }
 
-.currently-div {
+.currently-div,
+.today-div {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
+  width: 300px;
 }
 
 .current-temp,
@@ -30,7 +25,8 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-.current-parent-div h3 {
+.currently-div h3,
+.today-div h3 {
   font-size: 24px;
 }
 

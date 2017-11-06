@@ -1,5 +1,5 @@
 .seven-hour {
-  display: inline-block;
+
 }
 
 h2 {
@@ -9,8 +9,8 @@ h2 {
 }
 
 .seven-card-holder {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
-  width: 910px;
 }
