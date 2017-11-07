@@ -14,16 +14,27 @@
   width: 300px;
 }
 
-.current-temp,
+
 .high-low {
-  font-size: 26px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.high-low span {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .currently-div h3,
 .today-div h3 {
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.today-div h4 {
+  font-size: 18px;
 }
 
 .summary {
@@ -35,7 +46,12 @@
   display: flex;
 }
 
+.current-img-temp img {
+  height: 60px;
+}
+
 .current-temp {
-  font-size: 36px;
+  font-size: 45px;
+  font-weight: bold;
   margin-left: 10px;
 }
