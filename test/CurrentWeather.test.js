@@ -8,9 +8,9 @@ describe('CurrentWeather', () => {
     expect(currentWeather).toBeDefined();
   });
 
-  it('should render two h3 title tags', () => {
+  it('should render one h3 title tag', () => {
     const currentWeather = shallow(<CurrentWeather />);
-    expect(currentWeather.find('h3').length).toEqual(2);
+    expect(currentWeather.find('h3').length).toEqual(1);
   });
 
   it('should render one  img', () => {
@@ -29,27 +29,27 @@ describe('CurrentWeather', () => {
   });
 
   it('should render the current-temp p tag with the prop temp', () => {
-    const currentWeather = shallow(<CurrentWeather temp="32"/>);
-    expect(currentWeather.find('.current-temp').text()).toEqual('32°F');
+    const currentWeather = shallow(<CurrentWeather temp={32}/>);
+    expect(currentWeather.find('.current-temp').text()).toEqual('32°');
   });
 
   it('should render the current-conditions p tag with the prop conditions', () => {
     const currentWeather = shallow(<CurrentWeather conditions="Cloudy Test"/>);
-    expect(currentWeather.find('.current-conditions').text()).toEqual('Current Conditions: Cloudy Test');
+    expect(currentWeather.find('.current-conditions').text()).toEqual('Currently: Cloudy Test');
   });
 
   it('should render the today-title h3 with props day, month, and date', () => {
-    const currentWeather = shallow(<CurrentWeather day="Monday" month="November" date="6"/>);
+    const currentWeather = shallow(<CurrentWeather day="Monday" month="November" date={6}/>);
     expect(currentWeather.find('.today-title').text()).toEqual('Monday, November 6');
   });
 
   it('should render the high-low p tag with the high and low props', () => {
     const currentWeather = shallow(<CurrentWeather high="70" low="30"/>);
-    expect(currentWeather.find('.high-low').text()).toEqual('70°F / 30°F');
+    expect(currentWeather.find('.high-low').text()).toEqual('70°/ 30°');
   });
 
   it('should render the summary p tag with the summary prop', () => {
     const currentWeather = shallow(<CurrentWeather summary="I am a summary" />);
-    expect(currentWeather.find('.summary').text()).toEqual('Today\'s Outlook: I am a summary');
+    expect(currentWeather.find('.summary').text()).toEqual('I am a summary');
   });
 });

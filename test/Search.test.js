@@ -40,7 +40,7 @@ describe('Search', () => {
   it('should have an input placeholder that starts with Enter a location.', () => {
     const search = shallow(<Search locationClick={() => {}} />);
     const inputPlaceholder = search.find('input').props().placeholder;
-    expect(inputPlaceholder).toEqual('Enter a location.');
+    expect(inputPlaceholder).toEqual('City, ST or Zip Code');
   });
 
   it('should have a button', () => {
