@@ -20,11 +20,11 @@ describe('Card', () => {
 
   it('should render a p tag with the temperature if given one temp', () => {
     const card = shallow(<Card time="2:00" icon="" temp={[23]}/>);
-    expect(card.find('p').text()).toEqual('23°F');    
+    expect(card.find('p').text()).toEqual('23°');    
   });
 
   it('should render a p tag with the high and low if given two temps', () => {
     const card = shallow(<Card time="2:00" icon="" temp={[50, 25]}/>);
-    expect(card.find('p').text()).toEqual('50°F25°F');
+    expect(card.find('p').text()).toEqual('50°25°');
   });
 });

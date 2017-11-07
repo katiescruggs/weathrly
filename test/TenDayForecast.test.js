@@ -12,7 +12,7 @@ const mockArray = [
   {day: "Sunday", icon: "http://icons.wxug.com/i/c/k/partlycloudy.gif", highF: "55", lowF: "36"},
   {day: "Monday", icon: "http://icons.wxug.com/i/c/k/clear.gif", highF: "62", lowF: "38"},
   {day: "Tuesday", icon: "http://icons.wxug.com/i/c/k/clear.gif", highF: "56", lowF: "31"},
-  {day: "Wednesday", icon: "http://icons.wxug.com/i/c/k/clear.gif", highF: "53", lowF: "34"},
+  {day: "Wednesday", icon: "http://icons.wxug.com/i/c/k/clear.gif", highF: "53", lowF: "34"}
 ]
 
 describe('TenDayForecast', () => {
