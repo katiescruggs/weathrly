@@ -13,4 +13,9 @@ describe('App', () => {
     const app = shallow(<App />);
     expect(app).toBeDefined();
   });
+
+  it('should have a state with default properties', () => {
+    const app = shallow(<App />);
+    expect(app.state().apiData).toEqual(null);
+  });
 });

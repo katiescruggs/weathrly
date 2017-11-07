@@ -52,6 +52,7 @@ describe('Search', () => {
 
   it('should change the input placeholder to zip code if the zip code is in localStorage', () => {
     localStorage.setItem('city', '80209');
+    localStorage.setItem('state', 'undefined');
     
     const search = shallow(<Search locationClick={() => {}} />);
     const inputPlaceholder = search.find('input').props().placeholder;
