@@ -1,31 +1,10 @@
 # React Starter Kit
+I worked alone on this Weather App and completed it in nine days. Along the way, I learned React and strengthened my skills of working with APIs and manipulating objects. 
 
-To install the dependencies:
+Here are the wireframes I sketched for this project:
+![Alt text](lib/images/mobile-desktop.jpg?raw=true "Optional Title")
+![Alt text](lib/images/mobile-wireframe.jpg?raw=true "Optional Title")
 
-```
-npm install
-```
+Here is a screenshot of my final product: 
+![Alt text](lib/images/weatherly-screenshot.jpg?raw=true "Optional Title")
 
-To fire up a development server:
-
-```
-npm start
-```
-
-Once the server is running, you can visit:
-
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
-
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
-```
