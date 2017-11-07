@@ -93,4 +93,30 @@ describe('Search', () => {
     expect(localStorage.city).toEqual('Denver');
     expect(localStorage.state).toEqual('CO');
   });
+
+  it('should update this.state on change of input field', () => {
+    const search = shallow(<Search locationClick={() => {}} />);
+    search.find('input').simulate('change', {target: {value: 'Denver, CO'}});
+
+    expect(search.state().value).toEqual('Denver, CO');
+  });
+  
+  it.skip('should update this.state and localStorage on suggestion click', () => {
+    const search = shallow(<Search locationClick={() => {}} />);
+    search.suggestionsArray = ['Plano, TX', 'Denver, CO', 'OKC, OK'];
+    search.setState({value: 'OKC, OK'});
+
+    search.find('li').first().simulate('click', {target: {innerHTML: 'Plano, TX'}});
+
+    expect(search.state().value).toEqual('Plano, TX');
+    //expect(localStorage.city).toEqual('Plano');
+    //expect(localStorage.state).toEqual('TX');
+  });
+
+  it('should populate this.suggestionsArray on change of input field', () => {
+    const search = shallow(<Search locationClick={() => {}} />);
+    search.find('input').simulate('change', {target: {value: 'Den'}});
+
+    expect(search.instance().suggestionsArray).toEqual(['denton, tx', 'denver, co']);
+  });
 });
