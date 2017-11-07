@@ -5,9 +5,5 @@
 
 body {
   background-color: aliceblue;
+  background: linear-gradient(45deg, #F1FFF0,  #cce7ff);
 }
-
-/*body {
-  margin: 0 auto;
-  width: 90%;
-}*/
