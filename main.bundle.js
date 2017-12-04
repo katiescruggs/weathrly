@@ -30793,7 +30793,7 @@
 	      var city = localStorage.city;
 	
 	      //eslint-disable-next-line max-len
-	      fetch('http://api.wunderground.com/api/' + _key2.default + '/conditions/hourly/forecast10day/q/' + state + '/' + city + '.json').then(function (res) {
+	      fetch('https://api.wunderground.com/api/' + _key2.default + '/conditions/hourly/forecast10day/q/' + state + '/' + city + '.json').then(function (res) {
 	        return res.json();
 	      }).then(function (data) {
 	        _this2.setState({ error: false });
