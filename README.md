@@ -1,10 +1,9 @@
-# React Starter Kit
-I worked alone on this Weather App and completed it in nine days. Along the way, I learned React and strengthened my skills of working with APIs and manipulating objects. 
+# Weathrly
 
-Here are the wireframes I sketched for this project:
-![Alt text](lib/images/desktop-wireframe.jpg?raw=true "Optional Title")
-![Alt text](lib/images/mobile-wireframe.jpg?raw=true "Optional Title")
+### [See this website live at katiescruggs.com/weathrly](http://katiescruggs.com/weathrly)
 
-Here is a screenshot of my final product: 
-![Alt text](lib/images/weatherly-screenshot.png?raw=true "Optional Title")
+![Alt text](lib/images/weatherly-screenshot.png?raw=true "Weathrly Screenshot")
 
+I created this project alone as part of the front-end curriculum at [The Turing School](http://turing.io). This was my first foray into learning React.js, and I learned a lot! I also implemented a previous project of mine, [a prefix tree](http://github.com/katiescruggs/complete-me), to do the autocomplete functionality when the user types a city in. The weather data comes from the [wunderground API](https://www.wunderground.com/weather/api/d/docs).
+
+Technologies used: React, API calls, JavaScript, HTML, CSS, Enzyme, Jest, Git, GitHub
